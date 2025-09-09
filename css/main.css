@@ -1,0 +1,52 @@
+main {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+section.main_visual {
+	position: relative;
+	width: 100%;
+	height: 1260px;
+	background: url('../img/main/bg_main.png') no-repeat center top;
+	background-size: cover;
+}
+
+.slide_text {
+	font-family: 'Cafe24Surround';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 240px;
+	width: 100%;
+}
+
+.slide_text h3 {
+	font-family: 'Cafe24Surround';
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.slide_text h2 {
+	font-family: 'Cafe24Surround';
+	display: block;
+	font-size: 100px;
+	color: #307c40;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.slide_text h2 span {
+	display: inline-block;
+	color: #91430f;
+}
+.slide_text .m_tit {
+	margin: 0 auto;
+	display: block;
+}
+
+.slide_text img {
+	margin: 0 auto;
+	display: block;
+}

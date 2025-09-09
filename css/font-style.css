@@ -2,6 +2,7 @@
 @font-face {
 	font-family: 'Cafe24Surround';
 	src: url('../font/Cafe24Surround-v2.0.ttf') format('truetype');
+	src: url('../font/Cafe24Ssurround-v2.0.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
