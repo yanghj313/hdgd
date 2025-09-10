@@ -38,3 +38,33 @@ $(function () {
 		}
 	});
 });
+
+$(function () {
+	$('.snslist').slick({
+		infinite: true,
+		autoplay: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		variableWidth: true,
+		dots: false,
+		prevArrow: $('.prev.sns'),
+		nextArrow: $('.next.sns'),
+	});
+
+	$(document).on('click', '.play.sns', function () {
+		$(this).attr('class', 'stop sns');
+		$('.snslist').slick('slickPlay');
+		return false;
+	});
+
+	$(document).on('click', '.stop.sns', function () {
+		$(this).attr('class', 'play sns');
+		$('.snslist').slick('slickPause'); // <-- slickPlay/slickPause 짝 맞추기
+		return false;
+	});
+
+	$('.snslist').on('afterChange', function (event, slick, currentSlide) {
+		$('.snslist .item').removeClass('active');
+		$('.snslist .slick-current').addClass('active');
+	});
+});

@@ -5,6 +5,17 @@ body {
 	margin: 0;
 	font-family: 'pretendard';
 }
+
+legend,
+caption,
+.blind,
+.hidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+}
 .header {
 	position: fixed;
 	border-bottom: 1px solid #ddd;

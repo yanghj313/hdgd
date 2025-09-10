@@ -50,3 +50,111 @@ section.main_visual {
 	margin: 0 auto;
 	display: block;
 }
+
+/******************************************반응형************************************************/
+@media (max-width: 1280px) {
+	section.main_visual {
+		height: 900px;
+	}
+	.slide_text {
+		top: 140px;
+	}
+
+	.slide_text h3 {
+		font-size: 30px;
+		padding: 20px 0;
+	}
+
+	.slide_text h2 {
+		font-size: 70px;
+		padding-bottom: 10px;
+	}
+
+	.slide_text img {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.mush_tit img {
+		width: 80px;
+	}
+	.m_tit img {
+		height: 140px;
+	}
+}
+
+@media (max-width: 1279px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+	.slide_text {
+		top: 230px;
+	}
+
+	.slide_text h3 {
+		font-size: 26px;
+		padding: 10px 0;
+	}
+
+	.slide_text h2 {
+		font-size: 50px;
+		padding-bottom: 10px;
+	}
+
+	.slide_text img {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.mush_tit img {
+		width: 80px;
+	}
+	.m_tit img {
+		height: 100px;
+	}
+}
+
+@media (max-width: 1023px) {
+}
+
+@media (max-width: 990px) {
+}
+
+@media (max-width: 768px) {
+	section.main_visual {
+		height: 800px;
+	}
+	.slide_text {
+		top: 140px;
+	}
+}
+
+@media (max-width: 750px) {
+	.slide_text {
+		top: 140px;
+	}
+}
+
+@media (max-width: 640px) {
+}
+
+@media (max-width: 560px) {
+}
+
+@media (max-width: 555px) {
+}
+
+@media (max-width: 540px) {
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 359px) {
+}
