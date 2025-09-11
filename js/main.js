@@ -68,3 +68,32 @@ $(function () {
 		$('.snslist .slick-current').addClass('active');
 	});
 });
+
+function mkSwiper() {
+	if (document.querySelector('.section4 .swiper-container')) {
+		new Swiper('.section4 .swiper-container', {
+			loop: true,
+			pagination: {
+				el: '.section4 .swiper-pagination',
+				type: 'fraction',
+			},
+			scrollbar: {
+				el: '.section4 .swiper-progressbar',
+				hide: false,
+				draggable: true,
+			},
+			navigation: {
+				nextEl: '.section4 .swiper-button-next',
+				prevEl: '.section4 .swiper-button-prev',
+			},
+			breakpoints: {
+				0: { slidesPerView: 1, spaceBetween: 10 }, // 모바일
+				768: { slidesPerView: 2, spaceBetween: 15 }, // 태블릿
+				1024: { slidesPerView: 4, spaceBetween: 30 }, // PC
+			},
+		});
+	}
+}
+
+// ✅ DOM이 다 로드된 후 실행
+window.addEventListener('load', mkSwiper);

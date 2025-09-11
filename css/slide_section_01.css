@@ -56,6 +56,10 @@
 	background: url('../img/main/next_b.png') no-repeat center;
 }
 
+.section3 .stop {
+	display: none !important;
+}
+
 .section3 .ctrl a {
 	background-size: cover;
 	width: 60px;
@@ -172,12 +176,28 @@
 	cursor: pointer;
 }
 
+@media (max-width: 1900px) {
+	.section3 .con3L {
+		width: 26%;
+		padding-left: 100px;
+	}
+}
+
 @media (max-width: 1600px) {
+	.section3 .con3R {
+		width: 65%;
+		overflow: unset;
+	}
 	.section3 .con3Wr::before {
 		left: calc(-25% + 80px) !important;
 	}
 	.section3 .con3L .video a img {
 		width: 110%;
+	}
+
+	.section3 .galleryWr .item {
+		max-width: 96%;
+		margin-right: 20px;
 	}
 }
 
@@ -186,11 +206,18 @@
 
 @media (max-width: 1279px) {
 	.section3 .con3L {
-		width: 30%;
+		width: 32%;
+	}
+	.section3 .con3L h2 {
+		font-size: 46px;
 	}
 	.section3 .con3R {
-		width: 73%;
-		margin-left: -3%;
+		width: 52%;
+		margin-left: -5%;
+	}
+
+	.section3 .galleryWr {
+		padding: 120px 0;
 	}
 }
 
@@ -200,31 +227,56 @@
 @media (max-width: 1080px) {
 	.section3 .con3Wr::before {
 		width: auto;
-		height: 350px;
+		height: 100%;
 		right: 0;
+		background: #fcead6;
 		bottom: auto;
+		max-width: 100%;
+		left: 0 !important;
 	}
 	.section3 .con3L {
 		float: none;
 		width: 100%;
 		left: 0;
 		min-height: auto;
-		padding-top: 60px;
+		padding-top: 0;
+		padding-left: 0;
 	}
 	.section3 .con3L .title > p {
-		display: none;
+		/* display: none; */
+		float: left;
+		display: block;
 	}
 	.section3 .con3L h2 {
 		float: left;
+		display: block;
 	}
 	.section3 .ctrl {
-		float: right;
-		margin-top: 20px;
+		/* float: right; */
+		margin: 20px auto;
+		display: flex;
 	}
 	.section3 .con3R {
-		float: none;
+		float: left;
 		width: 100%;
-		padding: 0 0 60px 20px;
+		padding: 0 20px 0 20px;
+		margin: 0;
+	}
+
+	.section3 .con3L .title {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		padding: 20px 0 0;
+	}
+
+	.section3 .galleryWr .item {
+		height: 420px;
+	}
+
+	.section3 .item .txtBox {
+		padding: 20px;
 	}
 }
 
@@ -245,7 +297,16 @@
 @media (max-width: 767px) {
 	.section3 {
 		padding: 0;
+		margin: 80px 0 0;
 	}
+
+	.section3 .con3L h2 {
+		font-size: 36px;
+	}
+	.section3 .con3L .title > p {
+		font-size: 14px;
+	}
+
 	.section3 .con3R {
 		margin-left: 5px;
 		padding: 0 0 20px 0;
