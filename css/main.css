@@ -16,29 +16,32 @@ section.main_visual {
 }
 
 .slide_text {
-	font-family: 'Cafe24Surround';
+	font-family: 'NanumSquareRound';
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 	top: 240px;
 	width: 100%;
+	font-weight: 800;
 }
 
 .slide_text h3 {
-	font-family: 'Cafe24Surround';
+	font-family: 'NanumSquareRound';
 	text-align: center;
 	font-size: 50px;
 	color: #fff;
 	padding: 20px 0;
+	font-weight: 800;
 }
 
 .slide_text h2 {
-	font-family: 'Cafe24Surround';
+	font-family: 'NanumSquareRound';
 	display: block;
 	font-size: 100px;
 	color: #307c40;
 	text-align: center;
 	padding-bottom: 20px;
+	font-weight: 800;
 }
 .slide_text h2 span {
 	display: inline-block;

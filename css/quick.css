@@ -171,7 +171,8 @@ section.quick_menu {
 	word-break: keep-all;
 }
 .program-info .info-tit {
-	font-family: 'Cafe24Surround';
+	font-family: 'NanumSquareRound';
+	font-weight: 700;
 }
 
 .program-info .link .icon.icon1 {
