@@ -10,8 +10,8 @@ main {
 section.main_visual {
 	position: relative;
 	width: 100%;
-	height: 1260px;
-	background: url('../img/main/bg_main.png') no-repeat center top;
+	height: 1110px;
+	background: url('../img/main/bg_main_ver2.png') no-repeat center top;
 	background-size: cover;
 }
 
@@ -20,7 +20,7 @@ section.main_visual {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	top: 240px;
+	top: 130px;
 	width: 100%;
 	font-weight: 800;
 }
@@ -55,6 +55,59 @@ section.main_visual {
 .slide_text img {
 	margin: 0 auto;
 	display: block;
+}
+
+/* 공통 애니메이션 */
+@keyframes fadeUp {
+	0% {
+		opacity: 0;
+		transform: translate(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes scaleIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/* h3 애니메이션 */
+.slide_text h3 {
+	opacity: 0;
+	animation: fadeUp 1s ease forwards;
+	animation-delay: 0.5s;
+}
+
+/* h2 애니메이션 */
+.slide_text h2 {
+	opacity: 0;
+	animation: scaleIn 1s ease forwards;
+	animation-delay: 1s;
+}
+
+/* h2 안의 span 강조 효과 */
+.slide_text h2 span {
+	display: inline-block;
+	opacity: 0;
+	animation: fadeUp 0.8s ease forwards;
+	animation-delay: 1.4s;
+	color: #ff6600; /* 강조색 */
+}
+
+/* 서브 타이틀 이미지 */
+.slide_text .m_tit {
+	opacity: 0;
+	animation: fadeUp 1s ease forwards;
+	animation-delay: 1.8s;
 }
 
 /******************************************반응형************************************************/
@@ -97,7 +150,7 @@ section.main_visual {
 
 @media (max-width: 1024px) {
 	.slide_text {
-		top: 230px;
+		top: 220px;
 	}
 
 	.slide_text h3 {
@@ -140,7 +193,7 @@ section.main_visual {
 
 @media (max-width: 750px) {
 	.slide_text {
-		top: 140px;
+		top: 112px;
 	}
 }
 

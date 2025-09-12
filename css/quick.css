@@ -172,7 +172,7 @@ section.quick_menu {
 }
 .program-info .info-tit {
 	font-family: 'NanumSquareRound';
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .program-info .link .icon.icon1 {
@@ -356,7 +356,7 @@ section.quick_menu {
 	}
 	.program-info .link {
 		min-height: 105px;
-		padding: 21px 40px 19px;
+		padding: 21px 0 21px;
 		padding-left: 114px;
 		display: flex;
 		align-items: center;
@@ -366,6 +366,10 @@ section.quick_menu {
 	}
 	.program-info .info-tit {
 		font-size: 18px;
+	}
+
+	.program-info .dsc {
+		margin-top: 0;
 	}
 }
 

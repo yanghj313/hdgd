@@ -97,3 +97,8 @@ function mkSwiper() {
 
 // ✅ DOM이 다 로드된 후 실행
 window.addEventListener('load', mkSwiper);
+
+AOS.init({
+	duration: 1000,
+	once: true,
+});
