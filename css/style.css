@@ -194,3 +194,96 @@ caption,
 		display: none;
 	}
 }
+
+/* 푸터 */
+footer.footer {
+	background: transparent;
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin: 120px 100px 0;
+	padding: 60px 0;
+	border-top: 1px solid #999;
+}
+
+.footer_inner {
+	max-width: 1720px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+/* 좌측 영역 */
+.left_bottom {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.logo_img a {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.logo_img img {
+	height: 53px;
+	display: block;
+}
+
+.info address {
+	font-style: normal;
+	margin-bottom: 5px;
+	color: #555;
+}
+
+.info p {
+	margin: 2px 0;
+	color: #555;
+	font-size: 13px;
+}
+
+/* 우측 SNS */
+.right_bottom {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+.right_bottom a img {
+	width: 50px;
+	height: 50px;
+	transition: transform 0.3s;
+}
+
+.right_bottom a:hover img {
+	transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+	footer.footer {
+		margin: 50px 20px 0;
+		padding: 30px 0;
+	}
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+	.footer_inner {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+
+	.left_bottom {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.info {
+		text-align: center;
+	}
+}

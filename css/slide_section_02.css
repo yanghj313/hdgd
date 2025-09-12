@@ -179,6 +179,10 @@
 
 /* ✅ 반응형 */
 @media (max-width: 1023px) {
+	.section4 h2 {
+		font-size: 46px;
+	}
+
 	.component30 .inr {
 		max-width: 100%;
 		padding: 0 20px;
@@ -189,9 +193,28 @@
 	.component30 .swiper-button-next {
 		right: 10px;
 	}
+
+	.component30 .swiper-slide .img {
+		width: 100%;
+	}
+
+	.component30 .swiper-progressbar {
+		max-width: 680px;
+	}
 }
 
 @media (max-width: 767px) {
+	.section4 {
+		margin: 40px auto 0;
+	}
+	.section4 h2 {
+		font-size: 36px;
+		margin: 0 0 15px;
+	}
+	.section4 .title > p {
+		font-size: 14px;
+		margin: 20px;
+	}
 	.component30 .swiper-slide {
 		margin-top: 15px;
 	}
@@ -209,5 +232,9 @@
 	}
 	.component30 .swiper-pagination-fraction {
 		font-size: 14px;
+	}
+
+	.component30 .swiper-progressbar {
+		max-width: 300px;
 	}
 }
