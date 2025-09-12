@@ -148,9 +148,10 @@
 	font-size: 14px;
 	width: 260px;
 	margin: 0;
-	display: -webkit-box; /* 반드시 block 성격을 띠도록 */
+	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 5;
+	line-clamp: 5;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	line-height: 1.2;
