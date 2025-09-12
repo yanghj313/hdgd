@@ -141,22 +141,24 @@
 .section3 .item .txtBox {
 	padding: 30px;
 	background: #fff;
-	height: 220px;
+	height: 210px;
 }
 
 .section3 .galleryWr .txtBox .g_desc {
 	font-size: 14px;
 	width: 260px;
-	margin: 0 0 18px;
+	margin: 0;
 	display: -webkit-box; /* 반드시 block 성격을 띠도록 */
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 5;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	line-height: 1.2;
 }
 .section3 .item .txtBox em {
 	font-size: 14px;
 	color: #999;
+	display: none;
 }
 
 .section3 .item .txtBox strong {
